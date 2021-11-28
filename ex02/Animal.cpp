@@ -1,5 +1,4 @@
 #include "Animal.hpp"
-#include "Dog.hpp"
 
 std::string Animal::getType() {
 	return (type_);
