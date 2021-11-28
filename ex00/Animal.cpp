@@ -23,6 +23,6 @@ Animal& Animal::operator= (const Animal &target) {
 
 void Animal::makeSound()
 {
-	std::cout <<"[quiet]" << std::endl;
+	std::cout <<"[none]" << std::endl;
 }
 
