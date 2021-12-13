@@ -1,6 +1,19 @@
-#ifndef WRONGCAT_HPP
-#define EX00_WRONGCAT_HPP
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/13 19:04:40 by mjung             #+#    #+#             */
+/*   Updated: 2021/12/13 19:04:40 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#ifndef WRONGCAT_HPP
+#define WRONGCAT_HPP
+#include <iostream>
+#include <string>
 #include "WrongAnimal.hpp"
 
 class WrongCat :  public WrongAnimal
