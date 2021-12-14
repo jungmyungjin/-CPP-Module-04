@@ -1,40 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/14 18:33:55 by mjung             #+#    #+#             */
-/*   Updated: 2021/12/14 18:33:57 by mjung            ###   ########.fr       */
+/*   Created: 2021/12/14 18:34:05 by mjung             #+#    #+#             */
+/*   Updated: 2021/12/14 18:34:07 by mjung            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_H
-#define ANIMAL_H
-#include <iostream>
-#include <string>
+#include "Brain.hpp"
 
-class Animal
+Brain::Brain(void)
 {
-public:
-	// OCCP
-	Animal();
-	virtual ~Animal();
-	Animal(const Animal &target);
-
-	Animal& operator= (const Animal &target);
-
-	virtual void makeSound();
-	virtual std::string getType();
-
-	std::string *memo_;
-
-protected:
-	std::string type_;
-
-private:
-
+	std::cout << "Brain constructor" << std::endl;
 };
 
-#endif
+Brain::~Brain()
+{
+	std::cout << "Brain destructor" << std::endl;
+}
+
+Brain::Brain(const Brain &target)
+{
+}
+
+Brain& Brain::operator= (const Brain &target) {
+	return (*this);
+}
