@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/15 16:38:31 by mjung             #+#    #+#             */
-/*   Updated: 2021/12/15 16:39:26 by mjung            ###   ########.fr       */
+/*   Created: 2021/12/14 18:34:09 by mjung             #+#    #+#             */
+/*   Updated: 2021/12/14 18:34:11 by mjung            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-#define CAT_HPP
+#ifndef BRAIN_HPP
+#define BRAIN_HPP
 
-#include "Animal.hpp"
-#include "Brain.hpp"
+#include <iostream>
+#include <string>
 
-class Cat : virtual public Animal
+class Brain
 {
 	// OCCP
 public:
-	Cat();
-	virtual ~Cat();
-	Cat(const Cat &target);
-	Cat& operator=(const Cat &target);
+	Brain();
+	virtual ~Brain();
+	Brain(const Brain &target);
+	Brain& operator=(const Brain &target);
 
-	std::string getType();
-	void makeSound();
-
-private:
-	Brain *brain_;
-
+	std::string ideas[100];
 };
 
 #endif
+
+

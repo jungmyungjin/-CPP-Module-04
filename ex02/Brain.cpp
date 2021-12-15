@@ -1,36 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/15 16:38:31 by mjung             #+#    #+#             */
-/*   Updated: 2021/12/15 16:39:26 by mjung            ###   ########.fr       */
+/*   Created: 2021/12/14 18:34:05 by mjung             #+#    #+#             */
+/*   Updated: 2021/12/15 16:38:20 by mjung            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-#define CAT_HPP
-
-#include "Animal.hpp"
 #include "Brain.hpp"
 
-class Cat : virtual public Animal
+Brain::Brain(void)
 {
-	// OCCP
-public:
-	Cat();
-	virtual ~Cat();
-	Cat(const Cat &target);
-	Cat& operator=(const Cat &target);
-
-	std::string getType();
-	void makeSound();
-
-private:
-	Brain *brain_;
-
+	std::cout << "Brain constructor" << std::endl;
 };
 
-#endif
+Brain::~Brain()
+{
+	std::cout << "Brain destructor" << std::endl;
+}
+
+Brain::Brain(const Brain &target)
+{
+}
+
+Brain& Brain::operator= (const Brain &target) {
+	return (*this);
+}
